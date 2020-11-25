@@ -4,6 +4,75 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
+}
+
+body {
   background: url('/assets/images/login_bg.jpg') no-repeat;
   background-size: cover;
+  overflow: hidden;
+}
+
+.layui-main {
+  position: relative;
+}
+
+/* logo */
+.header {
+  position: absolute;
+  top: 20px;
+}
+
+.header h1 {
+  font-size: 0;
+  width: 146px;
+  height: 60px;
+  background: url(/assets/images/logo.png) no-repeat;
+  background-size: 100%;
+}
+
+/* 登录注册 */
+.loginAndRegBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 310px;
+  transform: translate(-50%, -50%);
+  padding: 0 30px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.loginAndRegBox input {
+  padding-left: 30px;
+}
+
+/* 登录注册标题 */
+.title-box {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 登录 */
+.login {}
+
+/* 注册 */
+.regbox {
+  display: none;
+}
+
+a[id^='link'] {
+  float: right;
+}
+
+.layui-form-item {
+  position: relative;
+}
+
+.layui-icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
 }
