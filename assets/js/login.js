@@ -30,7 +30,7 @@ $(function(){
     e.preventDefault()
     $.ajax({
       type:'POST',
-      url:'http://ajax.frontend.itheima.net/api/reguser',
+      url:'/api/reguser',
       data:{
         username:$('#form_reg [name=username]').val().trim(),
         password:$('#form_reg [name=password]').val().trim()
@@ -48,7 +48,7 @@ $(function(){
     e.preventDefault()
     $.ajax({
       type:'POST',
-      url:'http://ajax.frontend.itheima.net/api/login',
+      url:'/api/login',
       data:{
         username:$('#form_login [name=username]').val().trim(),
         password:$('#form_login [name=password]').val().trim()
